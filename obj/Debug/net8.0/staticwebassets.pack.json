@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\audio\\mario-coin-sound-effect.mp3",
+      "PackagePath": "staticwebassets\\audio\\mario-coin-sound-effect.mp3"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\audio\\mario-world-life-lost.mp3",
+      "PackagePath": "staticwebassets\\audio\\mario-world-life-lost.mp3"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\audio\\maro-jump-sound-effect_1.mp3",
+      "PackagePath": "staticwebassets\\audio\\maro-jump-sound-effect_1.mp3"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\audio\\overworld-theme-soundtrack.mp3",
+      "PackagePath": "staticwebassets\\audio\\overworld-theme-soundtrack.mp3"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\backgroundchao.gif",
+      "PackagePath": "staticwebassets\\img\\backgroundchao.gif"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\backgroundchao2.gif",
+      "PackagePath": "staticwebassets\\img\\backgroundchao2.gif"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\backgroundchaocorte.gif",
+      "PackagePath": "staticwebassets\\img\\backgroundchaocorte.gif"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\clouds.png",
+      "PackagePath": "staticwebassets\\img\\clouds.png"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\game-over.png",
+      "PackagePath": "staticwebassets\\img\\game-over.png"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\mario.gif",
+      "PackagePath": "staticwebassets\\img\\mario.gif"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\marioeyoshi.gif",
+      "PackagePath": "staticwebassets\\img\\marioeyoshi.gif"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\menu.gif",
+      "PackagePath": "staticwebassets\\img\\menu.gif"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\menu2.gif",
+      "PackagePath": "staticwebassets\\img\\menu2.gif"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\menucorte.gif",
+      "PackagePath": "staticwebassets\\img\\menucorte.gif"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\pipe.png",
+      "PackagePath": "staticwebassets\\img\\pipe.png"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\running2.gif",
+      "PackagePath": "staticwebassets\\img\\running2.gif"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\tartaruga.webp",
+      "PackagePath": "staticwebassets\\img\\tartaruga.webp"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.JogoMundoSenai.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.JogoMundoSenai.props",
+      "PackagePath": "build\\JogoMundoSenai.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.JogoMundoSenai.props",
+      "PackagePath": "buildMultiTargeting\\JogoMundoSenai.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.JogoMundoSenai.props",
+      "PackagePath": "buildTransitive\\JogoMundoSenai.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

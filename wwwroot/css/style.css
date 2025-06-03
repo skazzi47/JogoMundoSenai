@@ -25,7 +25,7 @@
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: url('../img/backgroundchao.gif') center center/cover no-repeat;
+    background: url('../img/backgroundchao.gif') center /cover no-repeat; /* move o background para baixo */
     opacity: 1;
     pointer-events: none;
 }
@@ -34,17 +34,20 @@
     z-index: 1;
 }
 
-.pipe {
+.pipe, .tartaruga {
     position: absolute;
-    bottom: 0;
+    bottom: 95px;
     width: 80px;
-    animation: pipe-animation 1.5s infinite linear;
+    right: -80px;
+    transition: none;
+    animation: none !important;
+    display: none;
 }
 
 .mario {
     width: 150px;
     position: absolute;
-    bottom: 0;
+    bottom: 95px;
 }
 
 .jump {
@@ -55,6 +58,11 @@
     position: absolute;
     width: 550px;
     animation: clouds-animation 10s infinite linear;
+}
+
+.tartaruga {
+    width: 80px;
+    /* Mesmas dimensões do pipe */
 }
 
 @keyframes pipe-animation {
@@ -68,22 +76,22 @@
 @keyframes jump {
 
     0% {
-        bottom: 0;
+        bottom: 95px;
     }
 
     40% {
-        bottom: 180px;
+        bottom: 275px;
     }
     50% {
-        bottom: 190px;
+        bottom: 285px;
     }
 
     60% {
-        bottom: 180px;
+        bottom: 275px;
     }
 
     100% {
-        bottom: 0;
+        bottom: 95px;
     }}
 
     @keyframes clouds-animation {
@@ -96,34 +104,77 @@
         }
     }
 
-    .mario.game-over {
-        animation: mario-gameover 1.2s forwards;
+    @keyframes tartaruga-animation {
+        from {
+            right: -90px;
+        }
+        to {
+            right: 100%;
+        }
     }
 
-    @keyframes mario-gameover {
+    .mario.game-over {
+        animation: mario-gameover-updown 1.8s forwards;
+    }
+
+    @keyframes mario-gameover-updown {
         0% {
             bottom: 0;
-            transform: rotate(0deg);
+            opacity: 1;
+            transform: none;
         }
         20% {
-            bottom: 120px;
-            transform: rotate(-20deg);
+            bottom: 100vh;
+            opacity: 1;
+            transform: none;
         }
-        40% {
-            bottom: 200px;
-            transform: rotate(-20deg);
-        }
-        60% {
-            bottom: 120px;
-            transform: rotate(-20deg);
-        }
-        80% {
-            bottom: 0;
-            transform: rotate(20deg);
+        50% {
+            bottom: 100vh;
+            opacity: 1;
+            transform: none;
         }
         100% {
             bottom: -200px;
-            opacity: 0;
-            transform: rotate(60deg);
+            opacity: 1;
+            transform: none;
         }
+    }
+
+    .menu {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #000000cc;
+        z-index: 100;
+    }
+    .menu-bg {
+        position: absolute;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .start-btn {
+        position: relative;
+        z-index: 1;
+        padding: 20px 60px;
+        font-size: 2rem;
+        border: none;
+        border-radius: 12px;
+        background: #fff;
+        color: #222;
+        cursor: pointer;
+        box-shadow: 0 4px 24px #0003;
+        transition: background 0.2s, color 0.2s;
+        margin-top: 0;
+    }
+    .start-btn:hover {
+        background: #ffd700;
+        color: #000;
     }
