@@ -5,13 +5,33 @@
 }
 
 .game-board {
-    width: 80%;
-    height: 500px;
-    border: 1px solid #333;
-    margin: 0 auto;
-    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    border: none;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     overflow: hidden;
     background: linear-gradient(#87CEEB, #E0F6FF);
+    /* Adiciona o GIF como camada de fundo, centralizado e coberto */
+}
+.game-board::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: url('../img/backgroundchao.gif') center center/cover no-repeat;
+    opacity: 1;
+    pointer-events: none;
+}
+.game-board > * {
+    position: relative;
+    z-index: 1;
 }
 
 .pipe {

@@ -3,15 +3,28 @@ const pipe = document.querySelector('.pipe');
 const menu = document.getElementById('menu');
 const startBtn = document.getElementById('start-btn');
 const gameBoard = document.querySelector('.game-board');
+const jumpSound = document.getElementById('jump-sound');
+const gameoverSound = document.getElementById('gameover-sound');
 
-const jump = () => {
-    mario.classList.add('jump');
+let isGameOver = false;
 
-    setTimeout(() => {
-
-        mario.classList.remove('jump');
-
-    }, 500);
+const jump = (event) => {
+    if (isGameOver) return;
+    // Permite pular apenas com espaço, seta para cima ou W
+    if (
+        event.code === 'Space' ||
+        event.code === 'ArrowUp' ||
+        event.code === 'KeyW'
+    ) {
+        if (!mario.classList.contains('jump')) {
+            mario.classList.add('jump');
+            jumpSound.currentTime = 0;
+            jumpSound.play();
+            setTimeout(() => {
+                mario.classList.remove('jump');
+            }, 500);
+        }
+    }
 }
 
 const loop = setInterval(()=> {
@@ -41,6 +54,15 @@ const loop = setInterval(()=> {
         void mario.offsetWidth;
         // Adiciona animação de game over
         mario.classList.add('game-over');
+        // Para o som de pulo imediatamente
+        jumpSound.pause();
+        jumpSound.currentTime = 0;
+        setTimeout(() => {
+            gameoverSound.currentTime = 0;
+            gameoverSound.play();
+        }, 50);
+
+        isGameOver = true;
 
         clearInterval(loop);
     }
