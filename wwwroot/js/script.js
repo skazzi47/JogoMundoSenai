@@ -1,5 +1,9 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
+const menu = document.getElementById('menu');
+const startBtn = document.getElementById('start-btn');
+const gameBoard = document.querySelector('.game-board');
+
 const jump = () => {
     mario.classList.add('jump');
 
@@ -43,4 +47,8 @@ const loop = setInterval(()=> {
 
 }, 10)
 
-document.addEventListener('keydown', jump);
+startBtn.addEventListener('click', () => {
+    menu.style.display = 'none';
+    gameBoard.style.display = 'block';
+    document.addEventListener('keydown', jump);
+});
