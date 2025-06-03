@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JogoMundoSenai")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca6bb8bb68b691eec72e7213e3518aedb9dc0d72")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0ee38e2119c147009f207651207f14b987c77dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("JogoMundoSenai")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JogoMundoSenai")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
