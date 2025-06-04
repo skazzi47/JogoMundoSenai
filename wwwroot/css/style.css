@@ -25,9 +25,11 @@
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: url('../img/backgroundchao2.gif') center /cover no-repeat; /* move o background para baixo */
+    background: url('../img/yoshiback2.png') repeat-x left center;
+    background-size: auto 100%;
     opacity: 1;
     pointer-events: none;
+    animation: yoshi-bg-move 10s linear infinite;
 }
 .game-board > * {
     position: relative;
@@ -63,6 +65,72 @@
 .tartaruga {
     width: 80px;
     /* Mesmas dimensões do pipe */
+}
+
+.moeda {
+    position: absolute;
+    bottom: 80px;
+    width: 60px;
+    height: 60px;
+    right: -90px;
+    display: none;
+    z-index: 3;
+}
+
+.barra-status {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1400px;
+    height: auto;
+    z-index: 200;
+    pointer-events: none;
+    display: none;
+}
+
+.contador-moedas {
+    position: fixed;
+    top: 28px;
+    right: 160px;
+    left: auto;
+    transform: none;
+    font-size: 4rem;
+    color: #ffd700;
+    font-family: 'Marionett', 'Arial Black', Arial, sans-serif;
+    z-index: 201;
+    text-shadow: 2px 2px 8px #000, 0 0 8px #fff;
+    pointer-events: none;
+    display: none;
+}
+
+.contador-tempo {
+    position: fixed;
+    top: 50px;
+    left: 675px;
+    right: auto;
+    transform: none;
+    font-size: 4rem;
+    color: #fff;
+    font-family: 'Marionett', 'Arial Black', Arial, sans-serif;
+    z-index: 201;
+    text-shadow: 2px 2px 8px #000, 0 0 8px #ffd700;
+    pointer-events: none;
+    display: none;
+}
+
+.contador-fixo {
+    position: fixed;
+    top: 58px;
+    left: 220px;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    color: #ff2222;
+    font-family: 'Marionett', 'Arial Black', Arial, sans-serif;
+    z-index: 201;
+    text-shadow: 2px 2px 8px #000, 0 0 8px #ffd700;
+    pointer-events: none;
+    display: block;
 }
 
 @keyframes pipe-animation {
@@ -192,4 +260,20 @@
         100% {
             background-position: 100% bottom;
         }
+    }
+
+    @keyframes yoshi-bg-move {
+        0% {
+            background-position-x: 0;
+        }
+        100% {
+            background-position-x: -1000px; /* ajuste conforme a largura da imagem */
+        }
+    }
+
+    @font-face {
+        font-family: 'Marionett';
+        src: url('../fonte/marionett/MarioNett.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
     }

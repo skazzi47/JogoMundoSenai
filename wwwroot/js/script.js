@@ -1,15 +1,25 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const tartaruga = document.querySelector('.tartaruga');
+const moeda = document.querySelector('.moeda');
 const menu = document.getElementById('menu');
 const startBtn = document.getElementById('start-btn');
 const gameBoard = document.querySelector('.game-board');
 const jumpSound = document.getElementById('jump-sound');
 const gameoverSound = document.getElementById('gameover-sound');
 const bgMusic = document.getElementById('bg-music');
+const coinSound = new Audio('./audio/mario-coin-sound-effect.mp3');
 
 let isGameOver = false;
 let currentObstacle = 'pipe'; // Alterna entre 'pipe' e 'tartaruga'
+let moedaActive = false;
+let contadorMoedas = 0;
+const contadorMoedasSpan = document.querySelector('.contador-moedas');
+let tempo = 0;
+let tempoInterval = null;
+const contadorTempoSpan = document.querySelector('.contador-tempo');
+let vidas = 3;
+const contadorFixoSpan = document.querySelector('.contador-fixo');
 
 const jump = (event) => {
     if (isGameOver) return;
@@ -60,6 +70,24 @@ function animateObstacle(obstacle, speed, onEnd) {
     frame();
 }
 
+function animateMoeda(speed) {
+    let pos = -90;
+    moeda.style.display = 'block';
+    moedaActive = true;
+    function frame() {
+        if (isGameOver || !moedaActive) return;
+        pos += speed;
+        moeda.style.right = pos + 'px';
+        if (pos < window.innerWidth) {
+            requestAnimationFrame(frame);
+        } else {
+            moeda.style.display = 'none';
+            moedaActive = false;
+        }
+    }
+    frame();
+}
+
 function startGameLoop() {
     let speed = 12; // Aumenta a velocidade do obstáculo
     function nextObstacle() {
@@ -75,6 +103,11 @@ function startGameLoop() {
         resetObstacle(other);
         startObstacle(obstacle);
         animateObstacle(obstacle, speed, () => {
+            // 50% de chance de aparecer moeda junto
+            if (Math.random() < 0.5 && !moedaActive) {
+                moeda.style.bottom = (parseInt(obstacle.style.bottom || 0) + 80) + 'px';
+                animateMoeda(speed);
+            }
             currentObstacle = currentObstacle === 'pipe' ? 'tartaruga' : 'pipe';
             setTimeout(nextObstacle, 500); // Pequeno delay entre obstáculos
         });
@@ -117,32 +150,102 @@ function checkCollision() {
         obstacleHitbox.bottom > marioHitbox.top &&
         obstacleHitbox.top < marioHitbox.bottom
     ) {
-        // Game over
-        isGameOver = true;
-        pauseBackgroundAnimations();
-        jumpSound.pause();
-        jumpSound.currentTime = 0;
-        bgMusic.pause();
-        obstacle.style.display = 'block';
-        mario.src = './img/game-over.png';
-        mario.style.width = '90px';
-        mario.style.height = 'auto';
-        // Centraliza o Mario na posição original ao trocar para game-over.png
-        const marioCenter = marioRect.left + marioRect.width / 2;
-        setTimeout(() => {
-            const newMarioRect = mario.getBoundingClientRect();
-            const newLeft = marioCenter - newMarioRect.width / 2;
-            mario.style.left = `${newLeft}px`;
-        }, 10);
-        mario.classList.remove('jump');
-        void mario.offsetWidth;
-        setTimeout(() => {
-            mario.classList.add('game-over');
-        }, 800);
-        setTimeout(() => {
-            gameoverSound.currentTime = 0;
-            gameoverSound.play();
-        }, 50);
+        // Controle de vidas: permite jogar uma última vez com 0
+        if (vidas > 0) {
+            vidas--;
+            contadorFixoSpan.textContent = vidas;
+        }
+        if (vidas >= 0) {
+            isGameOver = true;
+            if (tempoInterval) clearInterval(tempoInterval);
+            pauseBackgroundAnimations();
+            jumpSound.pause();
+            jumpSound.currentTime = 0;
+            bgMusic.pause();
+            obstacle.style.display = 'block';
+            mario.src = './img/game-over.png';
+            mario.style.width = '90px';
+            mario.style.height = 'auto';
+            const marioCenter = marioRect.left + marioRect.width / 2;
+            setTimeout(() => {
+                const newMarioRect = mario.getBoundingClientRect();
+                const newLeft = marioCenter - newMarioRect.width / 2;
+                mario.style.left = `${newLeft}px`;
+            }, 10);
+            mario.classList.remove('jump');
+            void mario.offsetWidth;
+            setTimeout(() => {
+                mario.classList.add('game-over');
+            }, 800);
+            setTimeout(() => {
+                gameoverSound.currentTime = 0;
+                gameoverSound.play();
+            }, 50);
+            // Se ainda tem a última chance (vidas > 0 ou vidas == 0), reinicia normalmente
+            if (vidas > 0) {
+                setTimeout(() => {
+                    // Reset para próxima vida
+                    mario.src = './img/mario.gif';
+                    mario.style.width = '150px';
+                    mario.style.height = '';
+                    mario.classList.remove('game-over');
+                    mario.style.left = '';
+                    isGameOver = false;
+                    contadorTempoSpan.style.display = 'block';
+                    contadorFixoSpan.style.display = 'block';
+                    tempoInterval = setInterval(() => {
+                        if (!isGameOver) {
+                            tempo++;
+                            contadorTempoSpan.textContent = tempo;
+                        }
+                    }, 1000);
+                    currentObstacle = 'pipe';
+                    resetObstacle(pipe);
+                    resetObstacle(tartaruga);
+                    document.addEventListener('keydown', jump);
+                    bgMusic.currentTime = 0;
+                    bgMusic.play();
+                    resumeBackgroundAnimations();
+                    startGameLoop();
+                }, 2000);
+            }
+        }
+        // Se já está em 0 e morrer de novo, reinicia o jogo
+        if (vidas === 0) {
+            // Permite jogar normalmente, mas não renasce mais depois
+            // O próximo hit (vidas < 0) reinicia o jogo
+        }
+        if (vidas < 0) {
+            isGameOver = true;
+            if (tempoInterval) clearInterval(tempoInterval);
+            contadorFixoSpan.style.display = 'none';
+            setTimeout(() => {
+                window.location.reload();
+            }, 2000);
+        }
+    }
+    // Colisão com moeda
+    if (moeda.style.display === 'block' && moedaActive) {
+        const moedaRect = moeda.getBoundingClientRect();
+        const moedaHitbox = {
+            left: moedaRect.left + 10,
+            right: moedaRect.right - 10,
+            top: moedaRect.top + 10,
+            bottom: moedaRect.bottom - 10
+        };
+        if (
+            moedaHitbox.left < marioHitbox.right &&
+            moedaHitbox.right > marioHitbox.left &&
+            moedaHitbox.bottom > marioHitbox.top &&
+            moedaHitbox.top < marioHitbox.bottom
+        ) {
+            moeda.style.display = 'none';
+            moedaActive = false;
+            coinSound.currentTime = 0;
+            coinSound.play();
+            contadorMoedas++;
+            contadorMoedasSpan.textContent = contadorMoedas;
+        }
     }
 }
 
@@ -154,6 +257,23 @@ setInterval(() => {
 startBtn.addEventListener('click', () => {
     menu.style.display = 'none';
     gameBoard.style.display = 'block';
+    document.querySelector('.barra-status').style.display = 'block';
+    contadorMoedas = 0;
+    contadorMoedasSpan.textContent = '0';
+    contadorMoedasSpan.style.display = 'block';
+    tempo = 0;
+    contadorTempoSpan.textContent = '0';
+    contadorTempoSpan.style.display = 'block';
+    if (tempoInterval) clearInterval(tempoInterval);
+    tempoInterval = setInterval(() => {
+        if (!isGameOver) {
+            tempo++;
+            contadorTempoSpan.textContent = tempo;
+        }
+    }, 1000);
+    vidas = 3;
+    contadorFixoSpan.textContent = '3';
+    contadorFixoSpan.style.display = 'block';
     isGameOver = false;
     mario.src = './img/mario.gif';
     mario.classList.remove('game-over');
