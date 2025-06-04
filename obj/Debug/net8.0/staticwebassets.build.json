@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bb1WMdPRIpMJxavIzKdFAZOkrpHLJX8TuPp7EEeeUZI=",
+  "Hash": "bJdhgCFFWem7x6O4SpYjUkX8fy/jfda4yLveUlu+bJE=",
   "Source": "JogoMundoSenai",
   "BasePath": "_content/JogoMundoSenai",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "JogoMundoSenai\\wwwroot",
       "Source": "JogoMundoSenai",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\audio\\mario-coin-sound-effect.mp3",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\audio\\mario-coin-sound-effect.mp3",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "audio/mario-coin-sound-effect.mp3",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\mario-coin-sound-effect.mp3"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\audio\\mario-world-life-lost.mp3",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\audio\\mario-world-life-lost.mp3",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "audio/mario-world-life-lost.mp3",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\mario-world-life-lost.mp3"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\audio\\maro-jump-sound-effect_1.mp3",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\audio\\maro-jump-sound-effect_1.mp3",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "audio/maro-jump-sound-effect_1.mp3",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\maro-jump-sound-effect_1.mp3"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\audio\\overworld-theme-soundtrack.mp3",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\audio\\overworld-theme-soundtrack.mp3",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "audio/overworld-theme-soundtrack.mp3",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\overworld-theme-soundtrack.mp3"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\css\\style.css",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\backgroundchao.gif",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\backgroundchao.gif",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/backgroundchao.gif",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\img\\backgroundchao.gif"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\backgroundchao2.gif",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\backgroundchao2.gif",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/backgroundchao2.gif",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\img\\backgroundchao2.gif"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\backgroundchaocorte.gif",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\backgroundchaocorte.gif",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/backgroundchaocorte.gif",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\img\\backgroundchaocorte.gif"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\clouds.png",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\clouds.png",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/clouds.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\img\\clouds.png"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\game-over.png",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\game-over.png",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/game-over.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\img\\game-over.png"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\mario.gif",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\mario.gif",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/mario.gif",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\img\\mario.gif"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\marioeyoshi.gif",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\marioeyoshi.gif",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/marioeyoshi.gif",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\img\\marioeyoshi.gif"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\menu.gif",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\menu.gif",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/menu.gif",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\img\\menu.gif"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\menu2.gif",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\menu2.gif",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/menu2.gif",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\img\\menu2.gif"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\menucorte.gif",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\menucorte.gif",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/menucorte.gif",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\img\\menucorte.gif"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\pipe.png",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\pipe.png",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/pipe.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\img\\pipe.png"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\running2.gif",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\running2.gif",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/running2.gif",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\running2.gif"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\img\\tartaruga.webp",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\tartaruga.webp",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "img/tartaruga.webp",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\img\\tartaruga.webp"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\index.html",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\js\\script.js",
+      "Identity": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\js\\script.js",
       "SourceId": "JogoMundoSenai",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Repositorios\\JogoMundoSenai\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\",
       "BasePath": "_content/JogoMundoSenai",
       "RelativePath": "js/script.js",
       "AssetKind": "All",

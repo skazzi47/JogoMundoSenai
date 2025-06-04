@@ -6,16 +6,16 @@
 
 .game-board {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     max-width: 100vw;
-    max-height: 100vh;
+    max-height: 80vh;
     border: none;
     margin: 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    /* Ajusta a altura para 80vh para abrir espaço para a nova caixa embaixo */
     overflow: hidden;
     background: linear-gradient(#87CEEB, #E0F6FF);
     /* Adiciona o GIF como camada de fundo, centralizado e coberto */
@@ -25,18 +25,18 @@
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: url('../img/backgroundchao.gif') center /cover no-repeat; /* move o background para baixo */
+    background: url('../img/backgroundchao2.gif') center /cover no-repeat; /* move o background para baixo */
     opacity: 1;
     pointer-events: none;
 }
 .game-board > * {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .pipe, .tartaruga {
     position: absolute;
-    bottom: 95px;
+    bottom: 0;
     width: 80px;
     right: -80px;
     transition: none;
@@ -47,17 +47,17 @@
 .mario {
     width: 150px;
     position: absolute;
-    bottom: 95px;
+    bottom: 0;
 }
 
 .jump {
-    animation: jump 500ms infinite ease-out;
+    animation: jump 500ms ease-out;
 }
 
 .clouds {
     position: absolute;
     width: 550px;
-    animation: clouds-animation 10s infinite linear;
+    animation: clouds-animation 5s infinite linear;
 }
 
 .tartaruga {
@@ -74,33 +74,26 @@
     }}
 
 @keyframes jump {
-
-    0% {
-        bottom: 95px;
-    }
-
-    40% {
-        bottom: 275px;
-    }
-    50% {
-        bottom: 285px;
-    }
-
-    60% {
-        bottom: 275px;
-    }
-
-    100% {
-        bottom: 95px;
-    }}
+    0%   { bottom: 95px; }
+    10%  { bottom: 120px; }
+    20%  { bottom: 145px; }
+    30%  { bottom: 170px; }
+    40%  { bottom: 195px; }
+    50%  { bottom: 220px; }
+    60%  { bottom: 195px; }
+    70%  { bottom: 170px; }
+    80%  { bottom: 145px; }
+    90%  { bottom: 120px; }
+    100% { bottom: 95px; }
+}
 
     @keyframes clouds-animation {
         from {
-            left: -550px;
+            left: 100%;
         }
         
         to {
-            left: 100%;
+            left: -550px;
         }
     }
 
@@ -177,4 +170,26 @@
     .start-btn:hover {
         background: #ffd700;
         color: #000;
+    }
+
+    .chao-box {
+        width: 100vw;
+        height: 20vh;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background: url('../img/mariochao2.png') center bottom/cover no-repeat;
+        pointer-events: none;
+        animation: chao-move 4s linear infinite;
+    }
+
+    @keyframes chao-move {
+        0% {
+            background-position: 0% bottom;
+        }
+        100% {
+            background-position: 100% bottom;
+        }
     }

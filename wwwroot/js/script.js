@@ -82,6 +82,16 @@ function startGameLoop() {
     nextObstacle();
 }
 
+function pauseBackgroundAnimations() {
+    document.querySelector('.chao-box').style.animationPlayState = 'paused';
+    document.querySelector('.clouds').style.animationPlayState = 'paused';
+}
+
+function resumeBackgroundAnimations() {
+    document.querySelector('.chao-box').style.animationPlayState = 'running';
+    document.querySelector('.clouds').style.animationPlayState = 'running';
+}
+
 function checkCollision() {
     if (isGameOver) return;
     let obstacle = currentObstacle === 'pipe' ? pipe : tartaruga;
@@ -109,6 +119,7 @@ function checkCollision() {
     ) {
         // Game over
         isGameOver = true;
+        pauseBackgroundAnimations();
         jumpSound.pause();
         jumpSound.currentTime = 0;
         bgMusic.pause();
@@ -152,5 +163,6 @@ startBtn.addEventListener('click', () => {
     document.addEventListener('keydown', jump);
     bgMusic.currentTime = 0;
     bgMusic.play();
+    resumeBackgroundAnimations();
     startGameLoop();
 });
