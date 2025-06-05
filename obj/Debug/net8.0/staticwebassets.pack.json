@@ -1,83 +1,135 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\audio\\mario-coin-sound-effect.mp3",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\audio\\mario-coin-sound-effect.mp3",
       "PackagePath": "staticwebassets\\audio\\mario-coin-sound-effect.mp3"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\audio\\mario-world-life-lost.mp3",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\audio\\mario-world-life-lost.mp3",
       "PackagePath": "staticwebassets\\audio\\mario-world-life-lost.mp3"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\audio\\maro-jump-sound-effect_1.mp3",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\audio\\maro-jump-sound-effect_1.mp3",
       "PackagePath": "staticwebassets\\audio\\maro-jump-sound-effect_1.mp3"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\audio\\overworld-theme-soundtrack.mp3",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\audio\\overworld-theme-soundtrack.mp3",
       "PackagePath": "staticwebassets\\audio\\overworld-theme-soundtrack.mp3"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\backgroundchao.gif",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\fonte\\marionett.zip",
+      "PackagePath": "staticwebassets\\fonte\\marionett.zip"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\fonte\\marionett\\MarioNett.ttf",
+      "PackagePath": "staticwebassets\\fonte\\marionett\\MarioNett.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\background2.jpg",
+      "PackagePath": "staticwebassets\\img\\background2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\backgroundchao.gif",
       "PackagePath": "staticwebassets\\img\\backgroundchao.gif"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\backgroundchao2.gif",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\backgroundchao2.gif",
       "PackagePath": "staticwebassets\\img\\backgroundchao2.gif"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\backgroundchaocorte.gif",
-      "PackagePath": "staticwebassets\\img\\backgroundchaocorte.gif"
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\barrastatus.png",
+      "PackagePath": "staticwebassets\\img\\barrastatus.png"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\clouds.png",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\barrastatus2.png",
+      "PackagePath": "staticwebassets\\img\\barrastatus2.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\botaojogar.png",
+      "PackagePath": "staticwebassets\\img\\botaojogar.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\clouds.png",
       "PackagePath": "staticwebassets\\img\\clouds.png"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\game-over.png",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\game-over.png",
       "PackagePath": "staticwebassets\\img\\game-over.png"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\mario.gif",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\gifmoeda.gif",
+      "PackagePath": "staticwebassets\\img\\gifmoeda.gif"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\iconmoeda.jpg",
+      "PackagePath": "staticwebassets\\img\\iconmoeda.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\mario.gif",
       "PackagePath": "staticwebassets\\img\\mario.gif"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\marioeyoshi.gif",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\mariochao2.png",
+      "PackagePath": "staticwebassets\\img\\mariochao2.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\mariochao3.png",
+      "PackagePath": "staticwebassets\\img\\mariochao3.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\marioeyoshi.gif",
       "PackagePath": "staticwebassets\\img\\marioeyoshi.gif"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\menu.gif",
-      "PackagePath": "staticwebassets\\img\\menu.gif"
-    },
-    {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\menu2.gif",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\menu2.gif",
       "PackagePath": "staticwebassets\\img\\menu2.gif"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\menucorte.gif",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\menucorte.gif",
       "PackagePath": "staticwebassets\\img\\menucorte.gif"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\pipe.png",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\moeda.gif",
+      "PackagePath": "staticwebassets\\img\\moeda.gif"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\pipe.png",
       "PackagePath": "staticwebassets\\img\\pipe.png"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\running2.gif",
-      "PackagePath": "staticwebassets\\img\\running2.gif"
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\sonicchao2.png",
+      "PackagePath": "staticwebassets\\img\\sonicchao2.png"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\img\\tartaruga.webp",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\sonicground.png",
+      "PackagePath": "staticwebassets\\img\\sonicground.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\tartaruga.webp",
       "PackagePath": "staticwebassets\\img\\tartaruga.webp"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\yoshiback.png",
+      "PackagePath": "staticwebassets\\img\\yoshiback.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\yoshiback2.png",
+      "PackagePath": "staticwebassets\\img\\yoshiback2.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\img\\yoshiislandbackground2.png",
+      "PackagePath": "staticwebassets\\img\\yoshiislandbackground2.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\Alunos\\Projetos-GM\\JogoMundoSenai\\wwwroot\\js\\script.js",
+      "Id": "C:\\Users\\Guilherme\\Repositórios GitHub\\JogoMundoSenai\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
     {

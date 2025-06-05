@@ -52,3 +52,30 @@ C:\Users\Alunos\Projetos-GM\JogoMundoSenai\obj\Debug\net8.0\refint\JogoMundoSena
 C:\Users\Alunos\Projetos-GM\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.pdb
 C:\Users\Alunos\Projetos-GM\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.genruntimeconfig.cache
 C:\Users\Alunos\Projetos-GM\JogoMundoSenai\obj\Debug\net8.0\ref\JogoMundoSenai.dll
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\bin\Debug\net8.0\appsettings.json
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\bin\Debug\net8.0\JogoMundoSenai.staticwebassets.runtime.json
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\bin\Debug\net8.0\JogoMundoSenai.exe
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\bin\Debug\net8.0\JogoMundoSenai.deps.json
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\bin\Debug\net8.0\JogoMundoSenai.runtimeconfig.json
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\bin\Debug\net8.0\JogoMundoSenai.dll
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\bin\Debug\net8.0\JogoMundoSenai.pdb
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.AssemblyInfoInputs.cache
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.AssemblyInfo.cs
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.sourcelink.json
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\staticwebassets\msbuild.JogoMundoSenai.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\staticwebassets\msbuild.build.JogoMundoSenai.props
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.JogoMundoSenai.props
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.JogoMundoSenai.props
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\scopedcss\bundle\JogoMundoSenai.styles.css
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.dll
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\refint\JogoMundoSenai.dll
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.pdb
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\JogoMundoSenai.genruntimeconfig.cache
+C:\Users\Guilherme\Repositórios GitHub\JogoMundoSenai\obj\Debug\net8.0\ref\JogoMundoSenai.dll

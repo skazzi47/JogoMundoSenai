@@ -19,7 +19,7 @@ let tempo = 0;
 let tempoInterval = null;
 const contadorTempoSpan = document.querySelector('.contador-tempo');
 let vidas = 3;
-const contadorFixoSpan = document.querySelector('.contador-fixo');
+const contadorVidasSpan = document.querySelector('.contador-vidas');
 
 const jump = (event) => {
     if (isGameOver) return;
@@ -89,7 +89,7 @@ function animateMoeda(speed) {
 }
 
 function startGameLoop() {
-    let speed = 12; // Aumenta a velocidade do obstáculo
+    let speed = 12;
     function nextObstacle() {
         if (isGameOver) return;
         let obstacle, other;
@@ -103,23 +103,92 @@ function startGameLoop() {
         resetObstacle(other);
         startObstacle(obstacle);
         animateObstacle(obstacle, speed, () => {
-            // 50% de chance de aparecer moeda junto
-            if (Math.random() < 0.5 && !moedaActive) {
-                moeda.style.bottom = (parseInt(obstacle.style.bottom || 0) + 80) + 'px';
-                animateMoeda(speed);
-            }
             currentObstacle = currentObstacle === 'pipe' ? 'tartaruga' : 'pipe';
-            setTimeout(nextObstacle, 500); // Pequeno delay entre obstáculos
+            setTimeout(nextObstacle, 500);
         });
+        // Spawn múltiplas moedas em posições variadas
+        if (!isGameOver) {
+            // Sempre pode spawnar uma moeda sobre o obstáculo
+            if (Math.random() < 0.9) {
+                spawnMoeda('obstacle', obstacle, speed);
+            }
+            // Pode spawnar moedas extras dos lados (esquerda/direita/centro)
+            const maxMoedasExtras = 2 + Math.floor(Math.random() * 2); // 2 ou 3 moedas extras
+            for (let i = 0; i < maxMoedasExtras; i++) {
+                if (Math.random() < 0.7) {
+                    spawnMoeda('random', null, speed);
+                }
+            }
+        }
     }
     nextObstacle();
 }
 
+// Função para spawnar moedas em diferentes posições
+function spawnMoeda(tipo, obstacle, speed) {
+    // Cria um novo elemento moeda
+    const novaMoeda = document.createElement('img');
+    novaMoeda.src = './img/gifmoeda.gif';
+    novaMoeda.className = 'moeda';
+    novaMoeda.style.position = 'absolute';
+    novaMoeda.style.display = 'block';
+    novaMoeda.style.zIndex = 3;
+    // Define posição vertical aleatória
+    const minBottom = 80;
+    const maxBottom = 350;
+    let bottom = Math.floor(Math.random() * (maxBottom - minBottom + 1)) + minBottom;
+    // Define posição horizontal inicial
+    let right = -90;
+    if (tipo === 'obstacle' && obstacle) {
+        // Sobre o obstáculo: mesma altura do obstáculo + 80px
+        bottom = (parseInt(obstacle.style.bottom || 0) + 80);
+    } else if (tipo === 'random') {
+        // Lados: pode variar a altura e pode variar o right inicial
+        if (Math.random() < 0.5) {
+            right = -90; // Lado direito (padrão)
+        } else {
+            right = Math.floor(Math.random() * (window.innerWidth * 0.5)); // Spawn mais à esquerda
+        }
+    }
+    novaMoeda.style.bottom = bottom + 'px';
+    novaMoeda.style.right = right + 'px';
+    // Adiciona ao game-board
+    gameBoard.appendChild(novaMoeda);
+    // Animação da moeda
+    let pos = right;
+    let ativa = true;
+    function frame() {
+        if (isGameOver || !ativa) {
+            novaMoeda.style.display = 'none';
+            gameBoard.removeChild(novaMoeda);
+            return;
+        }
+        pos += speed;
+        novaMoeda.style.right = pos + 'px';
+        if (pos < window.innerWidth) {
+            requestAnimationFrame(frame);
+        } else {
+            novaMoeda.style.display = 'none';
+            ativa = false;
+            if (gameBoard.contains(novaMoeda)) gameBoard.removeChild(novaMoeda);
+        }
+    }
+    frame();
+    // Colisão da moeda (adiciona ao loop de colisão)
+    novaMoeda._ativa = true;
+    moedasAtivas.push(novaMoeda);
+}
+
+// Lista para moedas ativas
+let moedasAtivas = [];
+
+// Função para pausar animações de fundo
 function pauseBackgroundAnimations() {
     document.querySelector('.chao-box').style.animationPlayState = 'paused';
     document.querySelector('.clouds').style.animationPlayState = 'paused';
 }
 
+// Função para retomar animações de fundo
 function resumeBackgroundAnimations() {
     document.querySelector('.chao-box').style.animationPlayState = 'running';
     document.querySelector('.clouds').style.animationPlayState = 'running';
@@ -153,7 +222,7 @@ function checkCollision() {
         // Controle de vidas: permite jogar uma última vez com 0
         if (vidas > 0) {
             vidas--;
-            contadorFixoSpan.textContent = vidas;
+            contadorVidasSpan.textContent = vidas;
         }
         if (vidas >= 0) {
             isGameOver = true;
@@ -192,7 +261,7 @@ function checkCollision() {
                     mario.style.left = '';
                     isGameOver = false;
                     contadorTempoSpan.style.display = 'block';
-                    contadorFixoSpan.style.display = 'block';
+                    contadorVidasSpan.style.display = 'block';
                     tempoInterval = setInterval(() => {
                         if (!isGameOver) {
                             tempo++;
@@ -218,15 +287,16 @@ function checkCollision() {
         if (vidas < 0) {
             isGameOver = true;
             if (tempoInterval) clearInterval(tempoInterval);
-            contadorFixoSpan.style.display = 'none';
+            contadorVidasSpan.style.display = 'none';
             setTimeout(() => {
                 window.location.reload();
             }, 2000);
         }
     }
-    // Colisão com moeda
-    if (moeda.style.display === 'block' && moedaActive) {
-        const moedaRect = moeda.getBoundingClientRect();
+    // Colisão com moedas múltiplas
+    moedasAtivas = moedasAtivas.filter(moedaEl => {
+        if (!moedaEl._ativa || moedaEl.style.display === 'none') return false;
+        const moedaRect = moedaEl.getBoundingClientRect();
         const moedaHitbox = {
             left: moedaRect.left + 10,
             right: moedaRect.right - 10,
@@ -239,14 +309,17 @@ function checkCollision() {
             moedaHitbox.bottom > marioHitbox.top &&
             moedaHitbox.top < marioHitbox.bottom
         ) {
-            moeda.style.display = 'none';
-            moedaActive = false;
+            moedaEl.style.display = 'none';
+            moedaEl._ativa = false;
+            if (gameBoard.contains(moedaEl)) gameBoard.removeChild(moedaEl);
             coinSound.currentTime = 0;
             coinSound.play();
             contadorMoedas++;
             contadorMoedasSpan.textContent = contadorMoedas;
+            return false;
         }
-    }
+        return true;
+    });
 }
 
 // Substitui o loop antigo por um novo loop de colisão
@@ -272,8 +345,8 @@ startBtn.addEventListener('click', () => {
         }
     }, 1000);
     vidas = 3;
-    contadorFixoSpan.textContent = '3';
-    contadorFixoSpan.style.display = 'block';
+    contadorVidasSpan.textContent = '3';
+    contadorVidasSpan.style.display = 'block';
     isGameOver = false;
     mario.src = './img/mario.gif';
     mario.classList.remove('game-over');
